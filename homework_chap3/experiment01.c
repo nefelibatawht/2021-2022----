@@ -206,17 +206,19 @@ void input(LinkList L)
             }
             LinkList s = (LinkList)malloc(sizeof(LinkList));
             printf("姓名:\n");
-            scanf("%s", &p->name);
+            scanf("%s", &s->name);
             printf("性别:\n");
-            scanf("%s", &p->sex);
+            scanf("%s", &s->sex);
             printf("年龄：\n");
-            scanf("%d", &p->old);
+            scanf("%d", &s->old);
             printf("学号：\n");
-            scanf("%d", &p->id);
+            scanf("%d", &s->id);
             printf("电话：\n");
-            scanf("%ld", &p->tel);
+            scanf("%ld", &s->tel);
             s->next = p->next;
             p->next = s;
+            // s->next = p;
+            // L->next = s;
             L->data = L->data + 1;
         }
         else
