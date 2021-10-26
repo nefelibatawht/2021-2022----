@@ -19,6 +19,7 @@ int main(void)
     init(&slt);
     append(&slt, 3);
     display(slt);
+    printf("\n");
     change(slt);
 }
 
